@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skeleton-retarget"
+version = "0.1.0"
+description = "LAFAN1 motion retargeting for the custom 17 and 31 joint skeletons"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "general-motion-retargeting",
+]
+
+[project.scripts]
+skeleton-retarget = "skeleton_retarget.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.8",
+]
+
+[tool.uv.sources]
+general-motion-retargeting = { path = "third_party/GMR" }
+
+[tool.setuptools.packages.find]
+include = ["skeleton_retarget*"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["third_party/GMR"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-ra"

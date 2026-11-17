@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.mp4
+*.avi
+*.mov
+# Clone upstream dependencies locally; they are installed via pyproject.toml.
+third_party/
+# LAFAN1 is downloaded separately; keep the local copy but do not commit it by default.
+data/raw/lafan1/
+data/outputs/

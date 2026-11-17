@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-15",
+  "purpose": "Remove historical model/config directory aliases and consolidate the reviewed source selection while preserving all retargeting behavior and motion values.",
+  "shared_selection": {
+    "path": "data/selections/lafan1_walks.json",
+    "clip_count": 12,
+    "all_original_clip_fields_preserved": true,
+    "global_selection_notes_preserved": true,
+    "source_paths": "canonical data/raw/lafan1",
+    "original_source_hashes_frame_windows_and_gait_cycles_unchanged": true,
+    "bytes": 202407,
+    "replaces_files": [
+      "data/plans/lafan1/walk_120hz_plan_part1.json",
+      "data/plans/lafan1/walk_120hz_plan_part2.json"
+    ]
+  },
+  "removed": [
+    "skeleton_retarget/models",
+    "skeleton_retarget/configs",
+    "assets/lafan1_walks",
+    "skeleton_retarget/retargeting/ik_configs/lafan1_walks",
+    "data/plans/lafan1/walk_120hz_plan_part1.json",
+    "data/plans/lafan1/walk_120hz_plan_part2.json",
+    "data/human_skeleton/walk_120hz_plan_part1.json",
+    "data/human_skeleton/walk_120hz_plan_part2.json"
+  ],
+  "historical_provenance": {
+    "existing_json_model_config_mesh_motion_and_source_files_unchanged": true,
+    "old_recorded_model_and_config_paths_resolved_by": "skeleton_retarget/retargeting/paths.py:resolve_recorded_path",
+    "existing_output_selection_json": "Retained as snapshots of each historical export, rather than active batch input.",
+    "root_data_raw_and_output_links": "Retained; only two obsolete custom plan links removed."
+  },
+  "verification": {
+    "official_tracked_files_checked_sha256": 1938,
+    "official_changes": [],
+    "preserved_byte_for_byte": {
+      "assets/": 123,
+      "skeleton_retarget/retargeting/ik_configs/": 35,
+      "data/raw/": 77,
+      "data/outputs/": 178
+    },
+    "unexpected_changes": [],
+    "unit_tests_before": 33,
+    "unit_tests_after": 34,
+    "regression_added": "Reusing an unchanged existing calibration with a historical model path preserves both configuration and provenance bytes.",
+    "saved_motion_validation": {
+      "count": 24,
+      "all_passed": true,
+      "total_frames": 6512
+    },
+    "shared_selection_loading": "All 12 source hashes, selected intervals and skeleton17 gait metadata checked.",
+    "batch17_resume": {
+      "shared_default_selection": true,
+      "passed": 12,
+      "reused": 12,
+      "generated": 0
+    },
+    "batch17_export": {
+      "motion": "walk1_subject1",
+      "frames": 396,
+      "fps": 120,
+      "passed": true
+    },
+    "batch31_export": {
+      "motion": "walk3_subject3",
+      "frames": 340,
+      "fps": 120,
+      "passed": true
+    },
+    "rerun_arrays": {
+      "rerun17": {
+        "fps": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_rot": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dof_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "local_body_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "link_body_list": {
+          "equal": true,
+          "maximum_absolute_difference": null
+        }
+      },
+      "rerun31": {
+        "fps": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_rot": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dof_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "local_body_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "link_body_list": {
+          "equal": true,
+          "maximum_absolute_difference": null
+        }
+      },
+      "batch17": {
+        "fps": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_rot": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dof_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "local_body_pos": {
+          "equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "link_body_list": {
+          "equal": true,
+          "maximum_absolute_difference": null
+        }
+      }
+    },
+    "compatibility_links_remaining": {
+      "data/lafan1": true,
+      "data/human_skeleton17_collision": true,
+      "data/human_skeleton/walks_120hz": true
+    },
+    "cli_help": {
+      "count": 13,
+      "all_passed": true
+    }
+  },
+  "backup": {
+    "directory": "/tmp/gmr_alias_cleanup_20261115_la7geojq",
+    "archive": "/tmp/gmr_alias_cleanup_20261115_la7geojq/skeleton_retarget_before.tar.gz",
+    "inventory": "/tmp/gmr_alias_cleanup_20261115_la7geojq/baseline.json"
+  }
+}

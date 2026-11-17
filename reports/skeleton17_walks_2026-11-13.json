@@ -1,0 +1,981 @@
+{
+  "date": "2026-11-13",
+  "scope": "Remaining reviewed LAFAN1 walk1-4 intervals retargeted to existing shared 17-independent-DOF collision skeleton. Source selection uses earlier one/two-cycle plans, not all 77 BVHs.",
+  "model": "/home/hy/workspace/GMR/skeleton_retarget/models/skeleton17_collision/human_skeleton.xml",
+  "model_sha256": "5bf59533af9c5d3317fbbbfe74e98ece170535fdd735a186e703460db482855c",
+  "motion_count": 12,
+  "new_motion_count": 11,
+  "total_frames": 3256,
+  "fps": 120,
+  "pytest_passed": 33,
+  "ruff_check_pass": true,
+  "ruff_format_pass": true,
+  "resume_validation_pass": true,
+  "preview_png_count": 12,
+  "preview_mp4_count": 12,
+  "preservation": {
+    "compared_existing_files": 2227,
+    "unchanged_existing_files": 2226,
+    "intentionally_updated_existing_documentation": [
+      "data/outputs/skeleton17_collision/README.md"
+    ],
+    "official_and_original_models_configs_sources_motions_unchanged": true,
+    "baseline_inventory": "/tmp/gmr_skeleton17_remaining_20261113/before.json",
+    "historical_reorganization_baseline_all_checks_pass": true,
+    "historical_data_path_aliases_restored": [
+      "data/human_skeleton/walks_120hz",
+      "data/human_skeleton/walk_120hz_plan_part1.json",
+      "data/human_skeleton/walk_120hz_plan_part2.json",
+      "data/human_skeleton17_collision"
+    ]
+  },
+  "motions": [
+    {
+      "motion": "walk1_subject1",
+      "newly_added": true,
+      "frames": 396,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.8175684930350142,
+      "minimum_sampled_cross_leg_clearance_m": 0.0011663505663682455,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 0,
+      "max_root_height_adjustment_m": 0.06411188734186724,
+      "max_support_foot_height_m": 0.0010000000000000564,
+      "npz_sha256": "81453d4d66ba3610ece8611a0b535d5837b9730651ccfd1859471f34f123dc43",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 396,
+            "min": 0.00011377878371365899,
+            "mean": 0.000943176603915192,
+            "p95": 0.0025413738412079995,
+            "max": 0.008619126020956349
+          },
+          "tracking_original_target_m": {
+            "count": 396,
+            "min": 0.027325380179936687,
+            "mean": 0.053713409134885426,
+            "p95": 0.06068047717838898,
+            "max": 0.06413456658810754
+          },
+          "orientation_error_degrees": {
+            "count": 396,
+            "min": 0.005482064984077595,
+            "mean": 0.06536441634385061,
+            "p95": 0.20245354055442022,
+            "max": 0.5100651653446334
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 289,
+            "min": 0.0007109045906587897,
+            "mean": 0.1476688025189038,
+            "p95": 0.6790075134629919,
+            "max": 2.053709186228466
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 396,
+            "min": 7.681582650061261e-05,
+            "mean": 0.0010290359835492052,
+            "p95": 0.003247461982400995,
+            "max": 0.008681141474115757
+          },
+          "tracking_original_target_m": {
+            "count": 396,
+            "min": 0.02378121398029551,
+            "mean": 0.05374901838329642,
+            "p95": 0.06047090900765256,
+            "max": 0.06474277137340588
+          },
+          "orientation_error_degrees": {
+            "count": 396,
+            "min": 0.005364918453413728,
+            "mean": 0.11028063598016329,
+            "p95": 0.2836831599976942,
+            "max": 2.0531789271605603
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 223,
+            "min": 0.007083500824841466,
+            "mean": 0.30013071676217395,
+            "p95": 2.133369822687882,
+            "max": 2.5600663964574837
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk1_subject2",
+      "newly_added": true,
+      "frames": 120,
+      "fps": 120.0,
+      "source_gait_cycles": 1,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 1.626008020037187,
+      "minimum_sampled_cross_leg_clearance_m": 0.004520671088438212,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 13,
+      "max_root_height_adjustment_m": 0.07868842600680681,
+      "max_support_foot_height_m": 0.010830850584227864,
+      "npz_sha256": "1a4317012e0a41e210ea6bd1510ee89b2a95776f57eed61b0fea84dfa28c9fcc",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 120,
+            "min": 7.171691633311444e-05,
+            "mean": 0.011581944161346584,
+            "p95": 0.09777177655353897,
+            "max": 0.15110092690687016
+          },
+          "tracking_original_target_m": {
+            "count": 120,
+            "min": 0.007126902409016613,
+            "mean": 0.06328596575391697,
+            "p95": 0.10418669317270947,
+            "max": 0.15497609727764228
+          },
+          "orientation_error_degrees": {
+            "count": 120,
+            "min": 0.002070894024802929,
+            "mean": 1.182317807757132,
+            "p95": 10.17062185449159,
+            "max": 16.024823079099438
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 69,
+            "min": 0.0075414469346304575,
+            "mean": 0.5514994937501188,
+            "p95": 5.00379161802456,
+            "max": 6.1642012242967885
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 120,
+            "min": 0.00010452410271745935,
+            "mean": 0.003911765726225281,
+            "p95": 0.03212220949005131,
+            "max": 0.04457991476070562
+          },
+          "tracking_original_target_m": {
+            "count": 120,
+            "min": 0.0057949393204582865,
+            "mean": 0.058852916636452514,
+            "p95": 0.08738199183673613,
+            "max": 0.10244502394697218
+          },
+          "orientation_error_degrees": {
+            "count": 120,
+            "min": 0.004980154224561129,
+            "mean": 0.35264400121813727,
+            "p95": 3.017062647232103,
+            "max": 4.593862798630423
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 76,
+            "min": 0.0039986228670434035,
+            "mean": 0.3771703747846274,
+            "p95": 2.2665933026069416,
+            "max": 4.3265749372367
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk1_subject5",
+      "newly_added": true,
+      "frames": 120,
+      "fps": 120.0,
+      "source_gait_cycles": 1,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.7584542315878446,
+      "minimum_sampled_cross_leg_clearance_m": 0.0011952616499892423,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 11,
+      "max_root_height_adjustment_m": 0.06516007314719363,
+      "max_support_foot_height_m": 0.012962706673102203,
+      "npz_sha256": "2893bd86a972aba5744ebb338a91c07816c0beb504db4743aeb4212843a81005",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 120,
+            "min": 9.871472851608606e-05,
+            "mean": 0.004803330597772417,
+            "p95": 0.023142934210204708,
+            "max": 0.04160901441131997
+          },
+          "tracking_original_target_m": {
+            "count": 120,
+            "min": 0.04282377050306992,
+            "mean": 0.05742113489589209,
+            "p95": 0.06448181776481798,
+            "max": 0.06510126581035418
+          },
+          "orientation_error_degrees": {
+            "count": 120,
+            "min": 0.0026896448092420893,
+            "mean": 1.6365509897796564,
+            "p95": 6.349605055755932,
+            "max": 6.958630123326721
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 65,
+            "min": 0.0068196182464887855,
+            "mean": 0.21939409790445819,
+            "p95": 0.6995739803900204,
+            "max": 0.8131809557232729
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 120,
+            "min": 4.403238979414549e-05,
+            "mean": 0.005014251857705051,
+            "p95": 0.02426591164145124,
+            "max": 0.04342993273058518
+          },
+          "tracking_original_target_m": {
+            "count": 120,
+            "min": 0.03974492712697327,
+            "mean": 0.055941810158142,
+            "p95": 0.06491353098418114,
+            "max": 0.06633587732603807
+          },
+          "orientation_error_degrees": {
+            "count": 120,
+            "min": 0.0012984277887493887,
+            "mean": 1.614585393751434,
+            "p95": 7.040161750635776,
+            "max": 8.100608657366086
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 50,
+            "min": 0.008702510821488279,
+            "mean": 0.6216242063631503,
+            "p95": 2.9663140061090965,
+            "max": 3.359507887136362
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk2_subject1",
+      "newly_added": true,
+      "frames": 256,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 1.1006499821563471,
+      "minimum_sampled_cross_leg_clearance_m": 0.003630224919791995,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 0,
+      "max_root_height_adjustment_m": 0.06217630946022634,
+      "max_support_foot_height_m": 0.0010000000000000425,
+      "npz_sha256": "cb845a0724779fc9a672aa7a0503deb598e68eb00c0a7aed46e9db2919d64a5f",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 256,
+            "min": 6.294121575061772e-05,
+            "mean": 0.0031807631150131827,
+            "p95": 0.017822095044852472,
+            "max": 0.05320278951304498
+          },
+          "tracking_original_target_m": {
+            "count": 256,
+            "min": 0.04400210918387195,
+            "mean": 0.05647356089140617,
+            "p95": 0.06248789316635693,
+            "max": 0.07196938526338106
+          },
+          "orientation_error_degrees": {
+            "count": 256,
+            "min": 0.007036658239039896,
+            "mean": 0.3144912116923551,
+            "p95": 1.9359062275451686,
+            "max": 5.756892779842467
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 254,
+            "min": 0.0015265918812723918,
+            "mean": 0.08149863444444957,
+            "p95": 0.3330741816204546,
+            "max": 0.698105598132683
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 256,
+            "min": 8.174359141660615e-05,
+            "mean": 0.002536685424489022,
+            "p95": 0.012101756845393394,
+            "max": 0.048088785779347096
+          },
+          "tracking_original_target_m": {
+            "count": 256,
+            "min": 0.046446551526370825,
+            "mean": 0.05612379117629017,
+            "p95": 0.061637245438087886,
+            "max": 0.06605808278176088
+          },
+          "orientation_error_degrees": {
+            "count": 256,
+            "min": 0.0028348812141294707,
+            "mean": 0.2434606336029666,
+            "p95": 1.3314168648773137,
+            "max": 5.203287660718306
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 206,
+            "min": 0.0019767336837274124,
+            "mean": 0.06573466318438174,
+            "p95": 0.24193838979809512,
+            "max": 1.3541454853864914
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk2_subject3",
+      "newly_added": true,
+      "frames": 388,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.8177515026501527,
+      "minimum_sampled_cross_leg_clearance_m": 0.0010035524700989877,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 24,
+      "max_root_height_adjustment_m": 0.07531321040782823,
+      "max_support_foot_height_m": 0.03227793171498426,
+      "npz_sha256": "b7f31b92c3764c698edf76c804232ecf5180fbe5f3a1b9028fd5e65be57ef5f8",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 388,
+            "min": 8.392002065969846e-05,
+            "mean": 0.01286414633444376,
+            "p95": 0.06420943665006087,
+            "max": 0.14524327591761269
+          },
+          "tracking_original_target_m": {
+            "count": 388,
+            "min": 0.0055300924457333265,
+            "mean": 0.050545506582246394,
+            "p95": 0.07196405741581374,
+            "max": 0.14439783211318075
+          },
+          "orientation_error_degrees": {
+            "count": 388,
+            "min": 0.004182899436867005,
+            "mean": 1.583783708462762,
+            "p95": 7.3770678046101885,
+            "max": 15.210259614268494
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 199,
+            "min": 0.0022613286454091354,
+            "mean": 0.5220753996465183,
+            "p95": 2.0395334640471514,
+            "max": 5.405346773386195
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 388,
+            "min": 9.510139502414589e-05,
+            "mean": 0.007661547675300936,
+            "p95": 0.034144457849104796,
+            "max": 0.04749757404879499
+          },
+          "tracking_original_target_m": {
+            "count": 388,
+            "min": 0.0032443428070122494,
+            "mean": 0.04778506953581302,
+            "p95": 0.07391342743555708,
+            "max": 0.08199979967064296
+          },
+          "orientation_error_degrees": {
+            "count": 388,
+            "min": 0.006705509862413776,
+            "mean": 0.9886988330497644,
+            "p95": 4.943883533617845,
+            "max": 6.470960323794037
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 219,
+            "min": 0.004894112846831121,
+            "mean": 0.5298784832474422,
+            "p95": 2.9156553563231506,
+            "max": 3.318808420794807
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk2_subject4",
+      "newly_added": true,
+      "frames": 388,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.8640286395769593,
+      "minimum_sampled_cross_leg_clearance_m": 0.001031992828993715,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 5,
+      "max_root_height_adjustment_m": 0.06596300619122997,
+      "max_support_foot_height_m": 0.0051376945453010525,
+      "npz_sha256": "a4aecc39abccb6cfea0f22f68ce846f5918901ea874ec1b8a4cf27dfedb5bc8f",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 388,
+            "min": 6.145844786184859e-05,
+            "mean": 0.0013111461834247095,
+            "p95": 0.0041103112202391726,
+            "max": 0.012196164116286929
+          },
+          "tracking_original_target_m": {
+            "count": 388,
+            "min": 0.0029850739763205244,
+            "mean": 0.04196012259861533,
+            "p95": 0.061674796681951895,
+            "max": 0.0685471861178569
+          },
+          "orientation_error_degrees": {
+            "count": 388,
+            "min": 0.0011757907387888596,
+            "mean": 0.15041807709961574,
+            "p95": 0.573967516748998,
+            "max": 1.4363224588526053
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 196,
+            "min": 0.002965535769104657,
+            "mean": 0.39148940827013234,
+            "p95": 2.7293324423298286,
+            "max": 3.0635731418670877
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 388,
+            "min": 4.9996306049265324e-05,
+            "mean": 0.0011880514423632683,
+            "p95": 0.0038616611947679216,
+            "max": 0.010055386010842163
+          },
+          "tracking_original_target_m": {
+            "count": 388,
+            "min": 0.0027953661553476008,
+            "mean": 0.04194245507327135,
+            "p95": 0.060582043246891995,
+            "max": 0.06631800795496984
+          },
+          "orientation_error_degrees": {
+            "count": 388,
+            "min": 0.006001597076871902,
+            "mean": 0.1544428197866758,
+            "p95": 0.5767753685457937,
+            "max": 3.20275146764683
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 243,
+            "min": 0.0026721747498986664,
+            "mean": 0.27874964832246574,
+            "p95": 2.4316251279606402,
+            "max": 2.9266311613115024
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk3_subject1",
+      "newly_added": true,
+      "frames": 340,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.7955905420994643,
+      "minimum_sampled_cross_leg_clearance_m": 0.0012330117524199588,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 22,
+      "max_root_height_adjustment_m": 0.07120801966385026,
+      "max_support_foot_height_m": 0.022352597062138574,
+      "npz_sha256": "632b09b8f17223053217135d4949a94f887959968eae6fa7211802d4954c8fdd",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 340,
+            "min": 0.00013060173326895743,
+            "mean": 0.004657575473275047,
+            "p95": 0.024886124798353674,
+            "max": 0.11551815609055523
+          },
+          "tracking_original_target_m": {
+            "count": 340,
+            "min": 0.042722848040252163,
+            "mean": 0.06405679133831933,
+            "p95": 0.07084252032132808,
+            "max": 0.12001750394163277
+          },
+          "orientation_error_degrees": {
+            "count": 340,
+            "min": 0.002724312818043163,
+            "mean": 0.49946179827035075,
+            "p95": 2.8341223334389833,
+            "max": 12.602745502934123
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 324,
+            "min": 0.0003590935624156165,
+            "mean": 0.17953388248842708,
+            "p95": 0.7836166406276114,
+            "max": 3.9049410277779275
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 340,
+            "min": 8.043945049967328e-05,
+            "mean": 0.004443534672266292,
+            "p95": 0.024209959774894596,
+            "max": 0.09379061851684099
+          },
+          "tracking_original_target_m": {
+            "count": 340,
+            "min": 0.029167072285678865,
+            "mean": 0.06349220607425157,
+            "p95": 0.07065395493878131,
+            "max": 0.10114112090947572
+          },
+          "orientation_error_degrees": {
+            "count": 340,
+            "min": 0.0018294553464813256,
+            "mean": 0.43679551572911135,
+            "p95": 2.778503453828837,
+            "max": 10.123460087816282
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 252,
+            "min": 0.00025156743325789897,
+            "mean": 0.18542472914948888,
+            "p95": 0.8852633341546257,
+            "max": 5.236700804601384
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk3_subject2",
+      "newly_added": true,
+      "frames": 284,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 1.1080567814936535,
+      "minimum_sampled_cross_leg_clearance_m": 0.003470912819067362,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 33,
+      "max_root_height_adjustment_m": 0.08586654513057801,
+      "max_support_foot_height_m": 0.015046506448570376,
+      "npz_sha256": "4643b96980a4cbd77363973c901a16941912b61e6934ecb551cc5c1c8a0664a9",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 284,
+            "min": 9.832221586387023e-05,
+            "mean": 0.005226829762204083,
+            "p95": 0.04428093049385996,
+            "max": 0.10030011200099304
+          },
+          "tracking_original_target_m": {
+            "count": 284,
+            "min": 0.00937699235505285,
+            "mean": 0.06755782821255317,
+            "p95": 0.08606821514044044,
+            "max": 0.1072071256983747
+          },
+          "orientation_error_degrees": {
+            "count": 284,
+            "min": 0.002395693272340717,
+            "mean": 0.5162054620393678,
+            "p95": 4.578083041171371,
+            "max": 10.771464363240305
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 170,
+            "min": 0.0014877846645852525,
+            "mean": 0.22525518832104213,
+            "p95": 2.2621466156465,
+            "max": 3.8216383400119147
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 284,
+            "min": 4.638500274082432e-05,
+            "mean": 0.002796086595164591,
+            "p95": 0.014485598969650132,
+            "max": 0.056881225276108054
+          },
+          "tracking_original_target_m": {
+            "count": 284,
+            "min": 0.0064707357493825135,
+            "mean": 0.06637745021431746,
+            "p95": 0.08443490134367623,
+            "max": 0.08970613162915123
+          },
+          "orientation_error_degrees": {
+            "count": 284,
+            "min": 0.0037569250895259946,
+            "mean": 0.25865365881597846,
+            "p95": 1.5194233578906409,
+            "max": 5.9892695278507855
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 183,
+            "min": 0.0019517242300188852,
+            "mean": 0.265622908769994,
+            "p95": 1.1161316320884676,
+            "max": 5.112179998912191
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk3_subject3",
+      "newly_added": false,
+      "frames": 340,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 44,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.45500919862316885,
+      "minimum_sampled_cross_leg_clearance_m": 0.001137561111578256,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 45,
+      "max_root_height_adjustment_m": 0.07937941379817692,
+      "max_support_foot_height_m": 0.04191274246794485,
+      "npz_sha256": "f43a9f41c13acb611da5b527f7d426d8762c84796451c78d6bb2389e40392b31",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 340,
+            "min": 8.205365563314848e-05,
+            "mean": 0.01599087203595393,
+            "p95": 0.07428989293898458,
+            "max": 0.14853342180368276
+          },
+          "tracking_original_target_m": {
+            "count": 340,
+            "min": 0.017064320304302133,
+            "mean": 0.06750632213461741,
+            "p95": 0.0990574425991599,
+            "max": 0.19594462560287046
+          },
+          "orientation_error_degrees": {
+            "count": 340,
+            "min": 0.004460151841563914,
+            "mean": 1.6849191093013423,
+            "p95": 7.822551195608506,
+            "max": 17.189168441354088
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 485,
+            "min": 0.0003803827808231819,
+            "mean": 0.1291167776862485,
+            "p95": 0.19554917684464682,
+            "max": 5.346320552356208
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 340,
+            "min": 5.69468082503728e-05,
+            "mean": 0.008252629923142102,
+            "p95": 0.029470827755227372,
+            "max": 0.03681482457939447
+          },
+          "tracking_original_target_m": {
+            "count": 340,
+            "min": 0.013621452093575915,
+            "mean": 0.053616965842466176,
+            "p95": 0.07028568263796571,
+            "max": 0.08317214784767911
+          },
+          "orientation_error_degrees": {
+            "count": 340,
+            "min": 0.004618624120195197,
+            "mean": 0.7307589971182101,
+            "p95": 3.1864238186156766,
+            "max": 4.754797775062598
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 7,
+            "min": 0.2308669778349572,
+            "mean": 0.5013120000773867,
+            "p95": 0.9083968397739987,
+            "max": 0.9379774957723536
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk3_subject4",
+      "newly_added": true,
+      "frames": 244,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.8493433101788719,
+      "minimum_sampled_cross_leg_clearance_m": 0.07440173799445932,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 0,
+      "max_root_height_adjustment_m": 0.05374114092207816,
+      "max_support_foot_height_m": 0.0013466802575331366,
+      "npz_sha256": "10749f299bcf5f90f3e927b8d25ad5b40d740bb00d65f19a5dffb23c6085d112",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 244,
+            "min": 2.4413198028315705e-05,
+            "mean": 0.0009443357415306028,
+            "p95": 0.0019502851998287507,
+            "max": 0.02847706339621581
+          },
+          "tracking_original_target_m": {
+            "count": 244,
+            "min": 0.016448537430001055,
+            "mean": 0.038910550534213384,
+            "p95": 0.05220763026415166,
+            "max": 0.053019979254338795
+          },
+          "orientation_error_degrees": {
+            "count": 244,
+            "min": 0.002690077207739211,
+            "mean": 0.09579641539781864,
+            "p95": 0.1930050216383017,
+            "max": 3.5090833615242105
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 144,
+            "min": 0.001977959944971102,
+            "mean": 0.6028467608919317,
+            "p95": 2.5340356246788476,
+            "max": 2.9611167850178197
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 244,
+            "min": 4.7440765221553135e-05,
+            "mean": 0.0004955822086937858,
+            "p95": 0.0012548213368926977,
+            "max": 0.0017561536489011634
+          },
+          "tracking_original_target_m": {
+            "count": 244,
+            "min": 0.01799643305504381,
+            "mean": 0.039197324533992314,
+            "p95": 0.051526225910109615,
+            "max": 0.05404720606447086
+          },
+          "orientation_error_degrees": {
+            "count": 244,
+            "min": 0.0034685062543652802,
+            "mean": 0.030111939981793356,
+            "p95": 0.0865386383780594,
+            "max": 0.1257074648635371
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 102,
+            "min": 0.0028736874537105303,
+            "mean": 0.41220017451208635,
+            "p95": 1.91458512240488,
+            "max": 2.531005078220136
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk3_subject5",
+      "newly_added": true,
+      "frames": 140,
+      "fps": 120.0,
+      "source_gait_cycles": 1,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 1.2431017705528624,
+      "minimum_sampled_cross_leg_clearance_m": 0.0010585535131340277,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 18,
+      "max_root_height_adjustment_m": 0.06791781151684162,
+      "max_support_foot_height_m": 0.020144600542771396,
+      "npz_sha256": "97eda9abec01a21c0fe159178f19d3dc3fff41856f0b5ada3b8a3f9061808760",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 140,
+            "min": 7.900286022855953e-05,
+            "mean": 0.009055036803156216,
+            "p95": 0.05814029774722584,
+            "max": 0.097319559274395
+          },
+          "tracking_original_target_m": {
+            "count": 140,
+            "min": 0.03048230115930724,
+            "mean": 0.05897487905401899,
+            "p95": 0.07370488914237364,
+            "max": 0.1041759203406791
+          },
+          "orientation_error_degrees": {
+            "count": 140,
+            "min": 0.007708948822015516,
+            "mean": 1.5170090494124044,
+            "p95": 7.418156362596705,
+            "max": 10.333498984698938
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 107,
+            "min": 0.007956548677084833,
+            "mean": 0.5433287925943227,
+            "p95": 5.2799069181331,
+            "max": 6.12529848898901
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 140,
+            "min": 3.174567747894864e-05,
+            "mean": 0.004438927781418247,
+            "p95": 0.02442594125536748,
+            "max": 0.03475127018890045
+          },
+          "tracking_original_target_m": {
+            "count": 140,
+            "min": 0.02210361095054632,
+            "mean": 0.05433736090470023,
+            "p95": 0.06784905822412815,
+            "max": 0.06947361102513672
+          },
+          "orientation_error_degrees": {
+            "count": 140,
+            "min": 0.002428752650089677,
+            "mean": 0.8934338942538093,
+            "p95": 4.522778716314977,
+            "max": 5.414216324034364
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 54,
+            "min": 0.0022523286560060833,
+            "mean": 0.09702740691331845,
+            "p95": 0.43138259529109363,
+            "max": 0.9457570166717998
+          }
+        }
+      }
+    },
+    {
+      "motion": "walk4_subject1",
+      "newly_added": true,
+      "frames": 240,
+      "fps": 120.0,
+      "source_gait_cycles": 2,
+      "check_count": 49,
+      "validation_pass": true,
+      "root_mean_speed_m_s": 0.7871617540666581,
+      "minimum_sampled_cross_leg_clearance_m": 0.0010789624629260846,
+      "self_penetration_saved_frame_count": 0,
+      "both_feet_above_3mm_frames": 3,
+      "max_root_height_adjustment_m": 0.06392377093090973,
+      "max_support_foot_height_m": 0.00873739986456211,
+      "npz_sha256": "205a643f962d0ca20f6b0751b7ad96493f21d970dee5381f097d3cd6fad1dce2",
+      "per_foot": {
+        "l": {
+          "tracking_after_common_height_shift_m": {
+            "count": 240,
+            "min": 0.0003296520966616221,
+            "mean": 0.008461041282073553,
+            "p95": 0.022353209073172165,
+            "max": 0.044264627167665715
+          },
+          "tracking_original_target_m": {
+            "count": 240,
+            "min": 0.05086423685197258,
+            "mean": 0.057724365940271,
+            "p95": 0.06411264465893533,
+            "max": 0.06974415045121532
+          },
+          "orientation_error_degrees": {
+            "count": 240,
+            "min": 0.029279706582375938,
+            "mean": 1.3902719710194742,
+            "p95": 4.964840486431276,
+            "max": 5.483634295360505
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 247,
+            "min": 0.005307459636956764,
+            "mean": 0.2259377502497613,
+            "p95": 1.0592740755430645,
+            "max": 2.625218345564472
+          }
+        },
+        "r": {
+          "tracking_after_common_height_shift_m": {
+            "count": 240,
+            "min": 0.0001518956406204635,
+            "mean": 0.007431128230268886,
+            "p95": 0.020984603383802012,
+            "max": 0.048384635381884186
+          },
+          "tracking_original_target_m": {
+            "count": 240,
+            "min": 0.042509059572779895,
+            "mean": 0.05729814939567087,
+            "p95": 0.06300447591894308,
+            "max": 0.07490193124371947
+          },
+          "orientation_error_degrees": {
+            "count": 240,
+            "min": 0.00777528173124663,
+            "mean": 0.732874579251452,
+            "p95": 2.3650525549696786,
+            "max": 5.342826446593298
+          },
+          "near_floor_corner_speed_m_s": {
+            "count": 148,
+            "min": 0.0035979383936794456,
+            "mean": 0.27150321724372367,
+            "p95": 0.903005653654115,
+            "max": 1.9464373325137032
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Kinematic IK reference; no dynamics, physical balance or Isaac/PhysX training validation.",
+    "Tracking errors and foot sliding remain. Root ground adjustment can lift both feet temporarily.",
+    "Collision distance checked at saved poses and three interior samples per interval, not a continuous swept volume proof."
+  ],
+  "code_sha256": {
+    "skeleton_retarget/workflows/skeleton17/batch_walks_120hz.py": "4790cc6d7b712017164f01e77b0e53df3dd32afa44a93104bc454e8a3b23136e",
+    "skeleton_retarget/workflows/skeleton17/prepare_model.py": "9975d838edb011c48317d6560a95d3f495577756072dff4e91e97b5b640e9108",
+    "skeleton_retarget/workflows/skeleton17/retarget_bvh.py": "08490a54057ba4c82b3259cacd8a5de332cbf6af1836f1fd5fdd0e4e3dfa432b",
+    "skeleton_retarget/workflows/skeleton17/validate_motion.py": "8726fa39be1ea1bcd21605b18c9d6e09a2f6717ae8cb9f510d0c110ee8bb4ad5"
+  }
+}

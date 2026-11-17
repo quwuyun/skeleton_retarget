@@ -1,0 +1,150 @@
+{
+  "offset_max_position_error_m": 2.024924904640011e-17,
+  "offset_max_rotation_error_rad": 1.3922879066191656e-16,
+  "reference_task_errors_before": [
+    3.925231146709438e-17,
+    3.925231146709438e-17
+  ],
+  "reference_after_one_solve_qpos_velocity_norm": 7.458762444715335e-17,
+  "model_qpos0": {
+    "iterations": 250,
+    "task_error1": 4.775184136825138e-12,
+    "task_error2": 4.775184136825138e-12,
+    "qref_velocity_norm": 0.0003042967906097976,
+    "max_body_position_error_m": 2.399521710606579e-12,
+    "max_body_orientation_error_rad": 4.1380894132589416e-11,
+    "max_locked_joint_angle_rad": 1.7038882773926162e-30,
+    "position_errors_m": {
+      "pelvis": 5.417219553986119e-15,
+      "femur_l": 1.6885910098986096e-12,
+      "tibia_l": 1.2200691291986797e-12,
+      "calcn_l": 1.903281805828541e-15,
+      "femur_r": 1.6882809068770117e-12,
+      "tibia_r": 1.2196947149909681e-12,
+      "calcn_r": 1.804966230688388e-15,
+      "torso": 2.399521710606579e-12,
+      "humerus_l": 2.028486796625587e-12,
+      "ulna_l": 2.554814214502491e-13,
+      "hand_l": 5.318400140512848e-14,
+      "humerus_r": 2.0287068747191055e-12,
+      "ulna_r": 2.5544147065485903e-13,
+      "hand_r": 5.3520299980133837e-14
+    },
+    "rotation_errors_rad": {
+      "pelvis": 1.6008382677659792e-11,
+      "femur_l": 8.067300762846175e-12,
+      "tibia_l": 8.37350833964299e-12,
+      "calcn_l": 2.5160757592206005e-11,
+      "femur_r": 8.066630035592994e-12,
+      "tibia_r": 8.373295475797928e-12,
+      "calcn_r": 2.515931430242404e-11,
+      "torso": 2.598516285869719e-12,
+      "humerus_l": 3.608695701097312e-11,
+      "ulna_l": 3.606433202165479e-11,
+      "hand_l": 4.138078530519604e-11,
+      "humerus_r": 3.608707751103758e-11,
+      "ulna_r": 3.6064446899017995e-11,
+      "hand_r": 4.1380894132589416e-11
+    }
+  },
+  "perturbed_reference": {
+    "iterations": 250,
+    "task_error1": 2.0056304482294896e-11,
+    "task_error2": 2.0056304482294896e-11,
+    "qref_velocity_norm": 0.0027540319405897924,
+    "max_body_position_error_m": 1.1077665738105901e-11,
+    "max_body_orientation_error_rad": 1.0940213984648564e-10,
+    "max_locked_joint_angle_rad": 1.990726398577655e-29,
+    "position_errors_m": {
+      "pelvis": 1.8052012934828215e-14,
+      "femur_l": 9.259246706026337e-12,
+      "tibia_l": 7.229232734121112e-12,
+      "calcn_l": 5.713824169351828e-15,
+      "femur_r": 1.1077665738105901e-11,
+      "tibia_r": 4.738635207535529e-12,
+      "calcn_r": 3.597667604331231e-15,
+      "torso": 7.580704830406013e-12,
+      "humerus_l": 7.00205105279458e-12,
+      "ulna_l": 2.995394267291804e-12,
+      "hand_l": 2.2901740227790357e-13,
+      "humerus_r": 1.6891732551050102e-12,
+      "ulna_r": 8.255799133214199e-13,
+      "hand_r": 1.656728570575659e-13
+    },
+    "rotation_errors_rad": {
+      "pelvis": 7.912486212365374e-11,
+      "femur_l": 3.134493173100612e-11,
+      "tibia_l": 3.2155385220652445e-11,
+      "calcn_l": 1.0940213984648564e-10,
+      "femur_r": 3.0410197693201935e-11,
+      "tibia_r": 1.1030873294119663e-11,
+      "calcn_r": 1.1062214209275655e-11,
+      "torso": 1.408275987958683e-11,
+      "humerus_l": 1.3041556017287273e-11,
+      "ulna_l": 1.2623000254684144e-11,
+      "hand_l": 1.2337078515441521e-11,
+      "humerus_r": 4.282405264136571e-12,
+      "ulna_r": 4.299969346672148e-12,
+      "hand_r": 9.066159826361734e-12
+    }
+  },
+  "source_reference_metadata": {
+    "method": "canonical_lafan1_anatomical_T_pose",
+    "uses_motion_frame": false,
+    "world_axes": {
+      "forward": "+X",
+      "left": "+Y",
+      "up": "+Z"
+    },
+    "root_offset_ignored_cm": [
+      173.408295,
+      91.952423,
+      -518.280273
+    ],
+    "nonidentity_local_rotations_wxyz": {
+      "Hips": [
+        -5.551115123125784e-17,
+        0.7071067811865476,
+        0.7071067811865476,
+        5.551115123125784e-17
+      ],
+      "LeftUpLeg": [
+        6.123233995736766e-17,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "RightUpLeg": [
+        6.123233995736766e-17,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "LeftFoot": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "RightFoot": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "LeftShoulder": [
+        4.329780281177467e-17,
+        0.7071067811865476,
+        -4.329780281177466e-17,
+        0.7071067811865475
+      ],
+      "RightShoulder": [
+        4.329780281177467e-17,
+        0.7071067811865476,
+        4.329780281177466e-17,
+        -0.7071067811865475
+      ]
+    },
+    "reason": "LAFAN1 BVH has no bind prerotations and uses local +X bone offsets; identity rotations are not an anatomical standing pose"
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "nq": 28,
+  "nv": 27,
+  "joint_count": 22,
+  "internal_hinge_count": 21,
+  "independent_internal_dof_count": 17,
+  "equality_count": 4,
+  "body_count_including_world": 86,
+  "geom_count": 85,
+  "mesh_asset_count": 81,
+  "site_count": 0,
+  "tendon_count": 0,
+  "actuator_count": 21,
+  "total_mass_kg": 84.87213447947214,
+  "dof_names": [
+    "hip_x_r",
+    "hip_y_r",
+    "hip_z_r",
+    "knee_x_r",
+    "knee_y_r",
+    "knee_z_r",
+    "ankle_x_r",
+    "ankle_y_r",
+    "ankle_z_r",
+    "hip_x_l",
+    "hip_y_l",
+    "hip_z_l",
+    "knee_x_l",
+    "knee_y_l",
+    "knee_z_l",
+    "ankle_x_l",
+    "ankle_y_l",
+    "ankle_z_l",
+    "back_x",
+    "back_y",
+    "back_z"
+  ],
+  "locked_joint_names": [
+    "knee_x_l",
+    "knee_x_r",
+    "knee_z_l",
+    "knee_z_r"
+  ],
+  "active_joint_names": [
+    "hip_x_r",
+    "hip_y_r",
+    "hip_z_r",
+    "knee_y_r",
+    "ankle_x_r",
+    "ankle_y_r",
+    "ankle_z_r",
+    "hip_x_l",
+    "hip_y_l",
+    "hip_z_l",
+    "knee_y_l",
+    "ankle_x_l",
+    "ankle_y_l",
+    "ankle_z_l",
+    "back_x",
+    "back_y",
+    "back_z"
+  ],
+  "source_xml": "assets/skeleton17_collision/source_original.xml",
+  "source_xml_sha256": "54eb2a8dadc3a1208007ba4352674986b9452569a54fabf4adc29986cfc82d0a",
+  "copied_xml": "human_skeleton.xml",
+  "copied_xml_sha256": "5bf59533af9c5d3317fbbbfe74e98ece170535fdd735a186e703460db482855c",
+  "calibration_bvh": "data/raw/lafan1/walk3_subject3.bvh",
+  "calibration_bvh_sha256": "2bd2ca6c17a313dadb41ef8fad4a2dbee3b9288d5949334faac49ba3aa030d3f",
+  "calibration_format": "lafan1",
+  "calibrated": true,
+  "mujoco_version": "3.13.0",
+  "external_mesh_dependencies": [],
+  "copied_dependencies": [
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_pelvis.stl",
+      "relative_path": "Geometry/r_pelvis.stl",
+      "source_sha256": "6eb7bbe904ce85566fc6afcde0935eda11ae12da341965616c7c798c9b2d7ee4",
+      "copied_sha256": "6eb7bbe904ce85566fc6afcde0935eda11ae12da341965616c7c798c9b2d7ee4"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_pelvis.stl",
+      "relative_path": "Geometry/l_pelvis.stl",
+      "source_sha256": "6998661b30f05288f018ca3e4934ae45560b1fd62f638f339fcf4881aa16c1a4",
+      "copied_sha256": "6998661b30f05288f018ca3e4934ae45560b1fd62f638f339fcf4881aa16c1a4"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/sacrum.stl",
+      "relative_path": "Geometry/sacrum.stl",
+      "source_sha256": "927ddbb64e811b2b03ad64eddb570cd40c0493f5b8cd5213d8d15a4502bfde10",
+      "copied_sha256": "927ddbb64e811b2b03ad64eddb570cd40c0493f5b8cd5213d8d15a4502bfde10"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_femur.stl",
+      "relative_path": "Geometry/r_femur.stl",
+      "source_sha256": "7d6e76a58e964551824169d89ae4b6142617f947bfdbc4ee0a4328040acf9f63",
+      "copied_sha256": "7d6e76a58e964551824169d89ae4b6142617f947bfdbc4ee0a4328040acf9f63"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_tibia.stl",
+      "relative_path": "Geometry/r_tibia.stl",
+      "source_sha256": "7c016de88550dab6bb33d3060ba7aa42b061ca78c5224b7d92a4c766f25ca15f",
+      "copied_sha256": "7c016de88550dab6bb33d3060ba7aa42b061ca78c5224b7d92a4c766f25ca15f"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_fibula.stl",
+      "relative_path": "Geometry/r_fibula.stl",
+      "source_sha256": "2cb0f77671c5421abdec1643aab77b41af2c2b5a8eff49845b098b2393443354",
+      "copied_sha256": "2cb0f77671c5421abdec1643aab77b41af2c2b5a8eff49845b098b2393443354"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_talus.stl",
+      "relative_path": "Geometry/r_talus.stl",
+      "source_sha256": "96202bdab4836e8fede82d3897b4b1bbc6f1afd6fc77e87b8bb444212df2ae90",
+      "copied_sha256": "96202bdab4836e8fede82d3897b4b1bbc6f1afd6fc77e87b8bb444212df2ae90"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_foot.stl",
+      "relative_path": "Geometry/r_foot.stl",
+      "source_sha256": "e95cf6418432ea49488790364588246202b7ce54d6827bef49ac3406733d9f4f",
+      "copied_sha256": "e95cf6418432ea49488790364588246202b7ce54d6827bef49ac3406733d9f4f"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_bofoot.stl",
+      "relative_path": "Geometry/r_bofoot.stl",
+      "source_sha256": "39dae011e441c0018cba4a00664d4076f0bb8f86f73522567275ececf6f78db5",
+      "copied_sha256": "39dae011e441c0018cba4a00664d4076f0bb8f86f73522567275ececf6f78db5"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/r_patella.stl",
+      "relative_path": "Geometry/r_patella.stl",
+      "source_sha256": "6a08e1e74354c65940bfd00ba343823e65eece2ebf10d9bf66c0429e83588128",
+      "copied_sha256": "6a08e1e74354c65940bfd00ba343823e65eece2ebf10d9bf66c0429e83588128"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_femur.stl",
+      "relative_path": "Geometry/l_femur.stl",
+      "source_sha256": "d72e3bc4c1d0bbf76e189d50cd0594e3275169d1b2bf48370cb07d3d2a1a848d",
+      "copied_sha256": "d72e3bc4c1d0bbf76e189d50cd0594e3275169d1b2bf48370cb07d3d2a1a848d"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_tibia.stl",
+      "relative_path": "Geometry/l_tibia.stl",
+      "source_sha256": "0b4392cf63f523dba4fa0d9fdd62cf2bf0b464eaeaad320103d33534fc9e5b60",
+      "copied_sha256": "0b4392cf63f523dba4fa0d9fdd62cf2bf0b464eaeaad320103d33534fc9e5b60"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_fibula.stl",
+      "relative_path": "Geometry/l_fibula.stl",
+      "source_sha256": "1b31ecc2af2935d3602f977af1787c55551a2179d38a44bb015005698a1e1bae",
+      "copied_sha256": "1b31ecc2af2935d3602f977af1787c55551a2179d38a44bb015005698a1e1bae"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_talus.stl",
+      "relative_path": "Geometry/l_talus.stl",
+      "source_sha256": "45cff977c3cf0e2da78832366630f662f20526a5c5ad4f753c268a58b10b3a6a",
+      "copied_sha256": "45cff977c3cf0e2da78832366630f662f20526a5c5ad4f753c268a58b10b3a6a"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_foot.stl",
+      "relative_path": "Geometry/l_foot.stl",
+      "source_sha256": "4cb976c3d03dc47cbee8786999a572f580044976e149c1bdeffe27666a0e42f7",
+      "copied_sha256": "4cb976c3d03dc47cbee8786999a572f580044976e149c1bdeffe27666a0e42f7"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_bofoot.stl",
+      "relative_path": "Geometry/l_bofoot.stl",
+      "source_sha256": "e3cc26950da6a22ac921e937740408bba43193f1c422810716435a4dd39a0ad1",
+      "copied_sha256": "e3cc26950da6a22ac921e937740408bba43193f1c422810716435a4dd39a0ad1"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/l_patella.stl",
+      "relative_path": "Geometry/l_patella.stl",
+      "source_sha256": "1cd80b37a1ba01dd6c135273e7e85a14733c9940905aaa72ce001fc164659440",
+      "copied_sha256": "1cd80b37a1ba01dd6c135273e7e85a14733c9940905aaa72ce001fc164659440"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hat_spine.stl",
+      "relative_path": "Geometry/hat_spine.stl",
+      "source_sha256": "31b718453325e85ae56cfdbd3fa37236c1018b9358de1d08b25ba8c6c87dbcf9",
+      "copied_sha256": "31b718453325e85ae56cfdbd3fa37236c1018b9358de1d08b25ba8c6c87dbcf9"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hat_jaw.stl",
+      "relative_path": "Geometry/hat_jaw.stl",
+      "source_sha256": "0f3bf4a2f419a755d26bbd0e46b81e19b497a6aab87da5f270f1db370ce0fb3b",
+      "copied_sha256": "0f3bf4a2f419a755d26bbd0e46b81e19b497a6aab87da5f270f1db370ce0fb3b"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hat_skull.stl",
+      "relative_path": "Geometry/hat_skull.stl",
+      "source_sha256": "c5eacbd85c96bc84ff48e595a8b59d1ddfab6026939e008e460348a5a672554c",
+      "copied_sha256": "c5eacbd85c96bc84ff48e595a8b59d1ddfab6026939e008e460348a5a672554c"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hat_ribs_scap.stl",
+      "relative_path": "Geometry/hat_ribs_scap.stl",
+      "source_sha256": "51fdd1f8b271f1034ccf282e622a0b990f676f23ae400c1bb3a805c0768b1201",
+      "copied_sha256": "51fdd1f8b271f1034ccf282e622a0b990f676f23ae400c1bb3a805c0768b1201"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/humerus_rv.stl",
+      "relative_path": "Geometry/humerus_rv.stl",
+      "source_sha256": "134bfdf8f9bf255033068daab778f957067dadb09a3a962fa49faf5ba8d92f0b",
+      "copied_sha256": "134bfdf8f9bf255033068daab778f957067dadb09a3a962fa49faf5ba8d92f0b"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ulna_rv.stl",
+      "relative_path": "Geometry/ulna_rv.stl",
+      "source_sha256": "6757fe1c980cdba714c90ffc74d86c96bd3619ae5b1fd74bb82fc8b3f4a4e7aa",
+      "copied_sha256": "6757fe1c980cdba714c90ffc74d86c96bd3619ae5b1fd74bb82fc8b3f4a4e7aa"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/radius_rv.stl",
+      "relative_path": "Geometry/radius_rv.stl",
+      "source_sha256": "861eb628a4f241751a0bf83fd2721809849ba814f5f57a0aa59dc64ce6c160f3",
+      "copied_sha256": "861eb628a4f241751a0bf83fd2721809849ba814f5f57a0aa59dc64ce6c160f3"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/pisiform_rvs.stl",
+      "relative_path": "Geometry/pisiform_rvs.stl",
+      "source_sha256": "c24e8836729d34ae5d20e3f988f49dbbb766f236f00ce8a4fe2fe9a65973c455",
+      "copied_sha256": "c24e8836729d34ae5d20e3f988f49dbbb766f236f00ce8a4fe2fe9a65973c455"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/lunate_rvs.stl",
+      "relative_path": "Geometry/lunate_rvs.stl",
+      "source_sha256": "1247099e02cfca9d1dcb2bc4ffc9d2cbf7830da79485067df16482fd0d6d2fd2",
+      "copied_sha256": "1247099e02cfca9d1dcb2bc4ffc9d2cbf7830da79485067df16482fd0d6d2fd2"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/scaphoid_rvs.stl",
+      "relative_path": "Geometry/scaphoid_rvs.stl",
+      "source_sha256": "1fc6f6dc2bf3566e6c9a29ac48583a166b7f3850985e01ddd4e6e636b63ebb83",
+      "copied_sha256": "1fc6f6dc2bf3566e6c9a29ac48583a166b7f3850985e01ddd4e6e636b63ebb83"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/triquetrum_rvs.stl",
+      "relative_path": "Geometry/triquetrum_rvs.stl",
+      "source_sha256": "570c7c01d2b29829720f1f65f30b260733eec87ae11b734d2dff5ad09f4723b6",
+      "copied_sha256": "570c7c01d2b29829720f1f65f30b260733eec87ae11b734d2dff5ad09f4723b6"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hamate_rvs.stl",
+      "relative_path": "Geometry/hamate_rvs.stl",
+      "source_sha256": "96f682bb48b6332d7e1cb025ef6971aa6e3c33f3262b87af7d101fe52460a13e",
+      "copied_sha256": "96f682bb48b6332d7e1cb025ef6971aa6e3c33f3262b87af7d101fe52460a13e"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/capitate_rvs.stl",
+      "relative_path": "Geometry/capitate_rvs.stl",
+      "source_sha256": "66024abeafd7bce847a1f2c620b9600924f4ab3975504e01b9d6d31e5fbd4d0c",
+      "copied_sha256": "66024abeafd7bce847a1f2c620b9600924f4ab3975504e01b9d6d31e5fbd4d0c"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/trapezoid_rvs.stl",
+      "relative_path": "Geometry/trapezoid_rvs.stl",
+      "source_sha256": "23327ba780b6a25e7c867bb0e7c2b45d9bb96dfe19f2cf601355513b87e8139d",
+      "copied_sha256": "23327ba780b6a25e7c867bb0e7c2b45d9bb96dfe19f2cf601355513b87e8139d"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/trapezium_rvs.stl",
+      "relative_path": "Geometry/trapezium_rvs.stl",
+      "source_sha256": "448795311dc977f7b621e0b74c7a906b9359727ddf5b4b1d111fe5be940587da",
+      "copied_sha256": "448795311dc977f7b621e0b74c7a906b9359727ddf5b4b1d111fe5be940587da"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal2_rvs.stl",
+      "relative_path": "Geometry/metacarpal2_rvs.stl",
+      "source_sha256": "62c4ad59055f96b499e9690c0442407e95282924a4551c14e0b6d873feb1134e",
+      "copied_sha256": "62c4ad59055f96b499e9690c0442407e95282924a4551c14e0b6d873feb1134e"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_proximal_rvs.stl",
+      "relative_path": "Geometry/index_proximal_rvs.stl",
+      "source_sha256": "67720ea80ab4e5af370449a63a170e9bdbdf74aafb89ec53ffa645c87837e319",
+      "copied_sha256": "67720ea80ab4e5af370449a63a170e9bdbdf74aafb89ec53ffa645c87837e319"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_medial_rvs.stl",
+      "relative_path": "Geometry/index_medial_rvs.stl",
+      "source_sha256": "00b44ce0379da4bb35ea830cce4cbd7dd4a95977c20192621264360c8772329d",
+      "copied_sha256": "00b44ce0379da4bb35ea830cce4cbd7dd4a95977c20192621264360c8772329d"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_distal_rvs.stl",
+      "relative_path": "Geometry/index_distal_rvs.stl",
+      "source_sha256": "916490370ff1f7bc62d45bfbf33fbd5c14d9d718208f1cb5f7c3acd5d60976ae",
+      "copied_sha256": "916490370ff1f7bc62d45bfbf33fbd5c14d9d718208f1cb5f7c3acd5d60976ae"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal3_rvs.stl",
+      "relative_path": "Geometry/metacarpal3_rvs.stl",
+      "source_sha256": "f64cf5a018df7ed95e6e1a255367fb7b03339172479139e78c730cb6471e092e",
+      "copied_sha256": "f64cf5a018df7ed95e6e1a255367fb7b03339172479139e78c730cb6471e092e"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_proximal_rvs.stl",
+      "relative_path": "Geometry/middle_proximal_rvs.stl",
+      "source_sha256": "d17ff1695843413deca330af1121674ca8b1fbd79608569141174bb429f6b84c",
+      "copied_sha256": "d17ff1695843413deca330af1121674ca8b1fbd79608569141174bb429f6b84c"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_medial_rvs.stl",
+      "relative_path": "Geometry/middle_medial_rvs.stl",
+      "source_sha256": "793aa8ec65d2d3d9902710d17104b9a381538c48feb91d83f6dc0611a01895f4",
+      "copied_sha256": "793aa8ec65d2d3d9902710d17104b9a381538c48feb91d83f6dc0611a01895f4"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_distal_rvs.stl",
+      "relative_path": "Geometry/middle_distal_rvs.stl",
+      "source_sha256": "476dc92e089609ca32cf355be95903ff79cedc5b902e7f45509a361f9d6a4641",
+      "copied_sha256": "476dc92e089609ca32cf355be95903ff79cedc5b902e7f45509a361f9d6a4641"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal4_rvs.stl",
+      "relative_path": "Geometry/metacarpal4_rvs.stl",
+      "source_sha256": "762d9eb9f2047e4b2c678515704d40aaa97dca835629ebd2bf8b4f21643c21ca",
+      "copied_sha256": "762d9eb9f2047e4b2c678515704d40aaa97dca835629ebd2bf8b4f21643c21ca"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_proximal_rvs.stl",
+      "relative_path": "Geometry/ring_proximal_rvs.stl",
+      "source_sha256": "fafe0be1092227fa513b8b6e7c946d6617d85f5ee059b2527b85bc96f36ae056",
+      "copied_sha256": "fafe0be1092227fa513b8b6e7c946d6617d85f5ee059b2527b85bc96f36ae056"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_medial_rvs.stl",
+      "relative_path": "Geometry/ring_medial_rvs.stl",
+      "source_sha256": "7cd89cd433cb02c0b7a8eb3c76d2239b43e4f586174314046fa6ac10a96f6f9a",
+      "copied_sha256": "7cd89cd433cb02c0b7a8eb3c76d2239b43e4f586174314046fa6ac10a96f6f9a"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_distal_rvs.stl",
+      "relative_path": "Geometry/ring_distal_rvs.stl",
+      "source_sha256": "c829699b1ea854ae355d7864f0d34af96aec259a973e2d2025b8b03f21f970d5",
+      "copied_sha256": "c829699b1ea854ae355d7864f0d34af96aec259a973e2d2025b8b03f21f970d5"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal5_rvs.stl",
+      "relative_path": "Geometry/metacarpal5_rvs.stl",
+      "source_sha256": "749fdbfb57698d7bde01a9c32857dc92d774bfd03191af4b160c3fd0b5e80797",
+      "copied_sha256": "749fdbfb57698d7bde01a9c32857dc92d774bfd03191af4b160c3fd0b5e80797"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_proximal_rvs.stl",
+      "relative_path": "Geometry/little_proximal_rvs.stl",
+      "source_sha256": "975eed28f1c8b5fa8fb4d40e0bfeb0c3e7b244f1f8a88c33d93c435f464cee69",
+      "copied_sha256": "975eed28f1c8b5fa8fb4d40e0bfeb0c3e7b244f1f8a88c33d93c435f464cee69"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_medial_rvs.stl",
+      "relative_path": "Geometry/little_medial_rvs.stl",
+      "source_sha256": "bd80cf769e6931dedda22df9cf715fc04f3f5ca1e2c08f46f5c798883e5b8b68",
+      "copied_sha256": "bd80cf769e6931dedda22df9cf715fc04f3f5ca1e2c08f46f5c798883e5b8b68"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_distal_rvs.stl",
+      "relative_path": "Geometry/little_distal_rvs.stl",
+      "source_sha256": "b891fc7dc7bef045afc94259fe88603230470eea27069474ffbe4acedb46c6e3",
+      "copied_sha256": "b891fc7dc7bef045afc94259fe88603230470eea27069474ffbe4acedb46c6e3"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal1_rvs.stl",
+      "relative_path": "Geometry/metacarpal1_rvs.stl",
+      "source_sha256": "de1d3d3d184031803e330d2013935809bdc4437d7b252cb31ac45948ad84ecbb",
+      "copied_sha256": "de1d3d3d184031803e330d2013935809bdc4437d7b252cb31ac45948ad84ecbb"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/thumb_proximal_rvs.stl",
+      "relative_path": "Geometry/thumb_proximal_rvs.stl",
+      "source_sha256": "bbf5504262307993a96cbf74eaa9a4b8d7615e4d56730fdd7a5f09df7e5617fe",
+      "copied_sha256": "bbf5504262307993a96cbf74eaa9a4b8d7615e4d56730fdd7a5f09df7e5617fe"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/thumb_distal_rvs.stl",
+      "relative_path": "Geometry/thumb_distal_rvs.stl",
+      "source_sha256": "af136ac56f62e152e28d536f67da1ce7e9161353e52e67d2efc9d63cad304c29",
+      "copied_sha256": "af136ac56f62e152e28d536f67da1ce7e9161353e52e67d2efc9d63cad304c29"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/humerus_lv.stl",
+      "relative_path": "Geometry/humerus_lv.stl",
+      "source_sha256": "9ccdfc51cd0b16c3fb5e424aceb41ecb74e306bc7ea22c587f2e2b54348700fa",
+      "copied_sha256": "9ccdfc51cd0b16c3fb5e424aceb41ecb74e306bc7ea22c587f2e2b54348700fa"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ulna_lv.stl",
+      "relative_path": "Geometry/ulna_lv.stl",
+      "source_sha256": "fbe2e3ee523f59a00e930f5743c0e8dce63ad19486e291cf269ce8b1d935ae04",
+      "copied_sha256": "fbe2e3ee523f59a00e930f5743c0e8dce63ad19486e291cf269ce8b1d935ae04"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/radius_lv.stl",
+      "relative_path": "Geometry/radius_lv.stl",
+      "source_sha256": "88a4136f0426ab54c1368d440092a30eaa81b44bde2efbd169cd5fb0dae76a5f",
+      "copied_sha256": "88a4136f0426ab54c1368d440092a30eaa81b44bde2efbd169cd5fb0dae76a5f"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/pisiform_lvs.stl",
+      "relative_path": "Geometry/pisiform_lvs.stl",
+      "source_sha256": "f0e18c9c13755f610c0506ec4510dcf7b7e2d099a5378f2505408880e7cafff5",
+      "copied_sha256": "f0e18c9c13755f610c0506ec4510dcf7b7e2d099a5378f2505408880e7cafff5"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/lunate_lvs.stl",
+      "relative_path": "Geometry/lunate_lvs.stl",
+      "source_sha256": "b5baa1997b5ac45098329f54dd1dba8bc34c183d913dfe14bc9d5f9bcbc5325d",
+      "copied_sha256": "b5baa1997b5ac45098329f54dd1dba8bc34c183d913dfe14bc9d5f9bcbc5325d"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/scaphoid_lvs.stl",
+      "relative_path": "Geometry/scaphoid_lvs.stl",
+      "source_sha256": "a3b215e8f03c7a1626ede00d330a2723b0d5d0b27eec14da1e0b65464378956d",
+      "copied_sha256": "a3b215e8f03c7a1626ede00d330a2723b0d5d0b27eec14da1e0b65464378956d"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/triquetrum_lvs.stl",
+      "relative_path": "Geometry/triquetrum_lvs.stl",
+      "source_sha256": "ebaf8e7d43bff9ab2459436b3e68e95977b132045579d2c66d10694a05bf3d9a",
+      "copied_sha256": "ebaf8e7d43bff9ab2459436b3e68e95977b132045579d2c66d10694a05bf3d9a"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/hamate_lvs.stl",
+      "relative_path": "Geometry/hamate_lvs.stl",
+      "source_sha256": "465b03cefffe18babe13f61fd2dc81a438e508387375324d75af3b003e53c1e2",
+      "copied_sha256": "465b03cefffe18babe13f61fd2dc81a438e508387375324d75af3b003e53c1e2"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/capitate_lvs.stl",
+      "relative_path": "Geometry/capitate_lvs.stl",
+      "source_sha256": "e42e37f7b9c448cfaf89761097726a729e46bc2c30840e9332657cb505718e36",
+      "copied_sha256": "e42e37f7b9c448cfaf89761097726a729e46bc2c30840e9332657cb505718e36"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/trapezoid_lvs.stl",
+      "relative_path": "Geometry/trapezoid_lvs.stl",
+      "source_sha256": "c5b61e434c4d9b31c952c11602caa63344af28dfbae0ab7a66886963da9653bf",
+      "copied_sha256": "c5b61e434c4d9b31c952c11602caa63344af28dfbae0ab7a66886963da9653bf"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/trapezium_lvs.stl",
+      "relative_path": "Geometry/trapezium_lvs.stl",
+      "source_sha256": "32481849f3251bef662d99674ddc7711f660e6dc698f420c1e6a8f21f30631d3",
+      "copied_sha256": "32481849f3251bef662d99674ddc7711f660e6dc698f420c1e6a8f21f30631d3"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal2_lvs.stl",
+      "relative_path": "Geometry/metacarpal2_lvs.stl",
+      "source_sha256": "295482adbf7592f0667bf55356fe9fc37ba63b5a40ba5038b63c56638239e95f",
+      "copied_sha256": "295482adbf7592f0667bf55356fe9fc37ba63b5a40ba5038b63c56638239e95f"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_proximal_lvs.stl",
+      "relative_path": "Geometry/index_proximal_lvs.stl",
+      "source_sha256": "b8bcd787b42bbaecbd4665ebfd082c69dfe32621b5970f348f1a0aceb125c2ab",
+      "copied_sha256": "b8bcd787b42bbaecbd4665ebfd082c69dfe32621b5970f348f1a0aceb125c2ab"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_medial_lvs.stl",
+      "relative_path": "Geometry/index_medial_lvs.stl",
+      "source_sha256": "34b6f0d98fd8bcf259628bbbcb72da9022d244daa1da62eeacc5a3aa0075b87f",
+      "copied_sha256": "34b6f0d98fd8bcf259628bbbcb72da9022d244daa1da62eeacc5a3aa0075b87f"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/index_distal_lvs.stl",
+      "relative_path": "Geometry/index_distal_lvs.stl",
+      "source_sha256": "b0250b6c3b488aa37853d8a6edb73412a964481c8dceef95fe67cff411742042",
+      "copied_sha256": "b0250b6c3b488aa37853d8a6edb73412a964481c8dceef95fe67cff411742042"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal3_lvs.stl",
+      "relative_path": "Geometry/metacarpal3_lvs.stl",
+      "source_sha256": "5de5323156341b0f824dbcc61bcc46a625d5c8a43df0cb0681b88e28f6b8a1a5",
+      "copied_sha256": "5de5323156341b0f824dbcc61bcc46a625d5c8a43df0cb0681b88e28f6b8a1a5"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_proximal_lvs.stl",
+      "relative_path": "Geometry/middle_proximal_lvs.stl",
+      "source_sha256": "ca987c45f10947078548fc2e341811ee5b75d54366cd526461bbea55a8a0f9e6",
+      "copied_sha256": "ca987c45f10947078548fc2e341811ee5b75d54366cd526461bbea55a8a0f9e6"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_medial_lvs.stl",
+      "relative_path": "Geometry/middle_medial_lvs.stl",
+      "source_sha256": "ee98cb4182c1ed8005e74e9a24cad9662e3c898eaf2574169d2d96fe911ed463",
+      "copied_sha256": "ee98cb4182c1ed8005e74e9a24cad9662e3c898eaf2574169d2d96fe911ed463"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/middle_distal_lvs.stl",
+      "relative_path": "Geometry/middle_distal_lvs.stl",
+      "source_sha256": "5b8d3066f0b1bc26ce151baf34fc4c3111179001ebfb62c5600a93863eeb1379",
+      "copied_sha256": "5b8d3066f0b1bc26ce151baf34fc4c3111179001ebfb62c5600a93863eeb1379"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal4_lvs.stl",
+      "relative_path": "Geometry/metacarpal4_lvs.stl",
+      "source_sha256": "4d231587d8ac97b9a7283e65a1695122e6bba9d1d367355c6b3020f445533de8",
+      "copied_sha256": "4d231587d8ac97b9a7283e65a1695122e6bba9d1d367355c6b3020f445533de8"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_proximal_lvs.stl",
+      "relative_path": "Geometry/ring_proximal_lvs.stl",
+      "source_sha256": "ade76aca3b0e265d82a90da2e6f901fcce9cb9ca8e5142715c9a288d556509a0",
+      "copied_sha256": "ade76aca3b0e265d82a90da2e6f901fcce9cb9ca8e5142715c9a288d556509a0"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_medial_lvs.stl",
+      "relative_path": "Geometry/ring_medial_lvs.stl",
+      "source_sha256": "7311b037e5b378f8b06d1b4e3200e5819155e81dfff2bb909040536f6121166a",
+      "copied_sha256": "7311b037e5b378f8b06d1b4e3200e5819155e81dfff2bb909040536f6121166a"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/ring_distal_lvs.stl",
+      "relative_path": "Geometry/ring_distal_lvs.stl",
+      "source_sha256": "ba7f9adf2876239b3da90d5a54e2f60ac1531c88314ebb6b82c495f3a24bf5e9",
+      "copied_sha256": "ba7f9adf2876239b3da90d5a54e2f60ac1531c88314ebb6b82c495f3a24bf5e9"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal5_lvs.stl",
+      "relative_path": "Geometry/metacarpal5_lvs.stl",
+      "source_sha256": "acb5e587972bb0070b705dec3cae9144cc014c9aace63d91c540cb0ca4f903ca",
+      "copied_sha256": "acb5e587972bb0070b705dec3cae9144cc014c9aace63d91c540cb0ca4f903ca"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_proximal_lvs.stl",
+      "relative_path": "Geometry/little_proximal_lvs.stl",
+      "source_sha256": "6d105011dd1c933d1461d40a0e7a419d489e7b8e61f597196cb5d3a18570d2ce",
+      "copied_sha256": "6d105011dd1c933d1461d40a0e7a419d489e7b8e61f597196cb5d3a18570d2ce"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_medial_lvs.stl",
+      "relative_path": "Geometry/little_medial_lvs.stl",
+      "source_sha256": "ccb9aa142d6ae05ddd4555866540eb4c81d2735a8fbc36876da6eba8caa0faa5",
+      "copied_sha256": "ccb9aa142d6ae05ddd4555866540eb4c81d2735a8fbc36876da6eba8caa0faa5"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/little_distal_lvs.stl",
+      "relative_path": "Geometry/little_distal_lvs.stl",
+      "source_sha256": "dc9532682683f005c4190ab2ae5a9720b923fe26009a542cb86bf31f9fa06316",
+      "copied_sha256": "dc9532682683f005c4190ab2ae5a9720b923fe26009a542cb86bf31f9fa06316"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/metacarpal1_lvs.stl",
+      "relative_path": "Geometry/metacarpal1_lvs.stl",
+      "source_sha256": "213c6258e61d51a5424308ddb68d6caa2fa6d7e418c88ceccd86741e641eec01",
+      "copied_sha256": "213c6258e61d51a5424308ddb68d6caa2fa6d7e418c88ceccd86741e641eec01"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/thumb_proximal_lvs.stl",
+      "relative_path": "Geometry/thumb_proximal_lvs.stl",
+      "source_sha256": "f46bc278d6ed5bc7cc753f8e54153a0e0589ec3d10af0605604bf491c06da662",
+      "copied_sha256": "f46bc278d6ed5bc7cc753f8e54153a0e0589ec3d10af0605604bf491c06da662"
+    },
+    {
+      "source": "assets/skeleton17_collision/Geometry/thumb_distal_lvs.stl",
+      "relative_path": "Geometry/thumb_distal_lvs.stl",
+      "source_sha256": "51030dafed0f62c09dfa3d52ffd693a038a4dcf3560da6d54b614c19e30c3b31",
+      "copied_sha256": "51030dafed0f62c09dfa3d52ffd693a038a4dcf3560da6d54b614c19e30c3b31"
+    }
+  ],
+  "dependency_file_count": 81,
+  "requires_equality_constraints": true,
+  "requires_ground_alignment_from_collision_boxes": true,
+  "tracked_body_count": 8,
+  "ik_config": "skeleton_retarget/retargeting/ik_configs/skeleton17_collision/walk3_subject3.json",
+  "ik_config_sha256": "54e7a417e8fe133a12a4cd54603b1bbe57046745e491fe407cf1914cbdd27441",
+  "calibration_checks": {
+    "method": "Static adjusted source targets versus new-model qpos0 body FK",
+    "per_body": {
+      "pelvis": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "femur_l": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "tibia_l": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "calcn_l": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "femur_r": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "tibia_r": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "calcn_r": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      },
+      "torso": {
+        "position_error_m": 0.0,
+        "orientation_error_rad": 0.0
+      }
+    },
+    "max_position_error_m": 0.0,
+    "max_orientation_error_rad": 0.0
+  },
+  "adaptations": [
+    "Copy the collision XML and every referenced resource into the GMR checkout",
+    "Preserve relative Geometry paths; no external runtime asset dependencies",
+    "Keep joint axes, order, ranges, four knee locks, inertias, actuators and collision shapes unchanged",
+    "Add retarget_reference keyframe equal to the new model qpos0",
+    "Calibrate eight pelvis, leg and torso body targets; omit fixed arm targets"
+  ]
+}

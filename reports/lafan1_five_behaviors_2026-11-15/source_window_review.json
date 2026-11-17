@@ -1,0 +1,47 @@
+{
+  "frame_convention": "zero-based [start, stop)",
+  "windows": [
+    {
+      "behavior": "turn_left",
+      "source": "walk1_subject1",
+      "start_frame": 590,
+      "stop_frame_exclusive": 745,
+      "source_fps": 30.000300003000028,
+      "source_anatomical_yaw_change_deg": 96.54936456241485,
+      "source_smoothed_yaw_change_deg": 96.79712311206504,
+      "first_halfsecond_mean_yaw_rate_deg_s": -1.9524020020248687,
+      "last_halfsecond_mean_yaw_rate_deg_s": 3.3995352432463184,
+      "source_mean_root_speed_m_s": 0.6421342002068513,
+      "source_foot_speed_p95_m_s": 2.472260288979608,
+      "source_mean_trunk_tilt_deg": 4.51803983995902
+    },
+    {
+      "behavior": "turn_right",
+      "source": "walk1_subject1",
+      "start_frame": 995,
+      "stop_frame_exclusive": 1135,
+      "source_fps": 30.000300003000028,
+      "source_anatomical_yaw_change_deg": -97.21736776171812,
+      "source_smoothed_yaw_change_deg": -93.89872232184806,
+      "first_halfsecond_mean_yaw_rate_deg_s": 1.6997501276554605,
+      "last_halfsecond_mean_yaw_rate_deg_s": -1.412455016713254,
+      "source_mean_root_speed_m_s": 0.6558183072604891,
+      "source_foot_speed_p95_m_s": 2.8395748826273057,
+      "source_mean_trunk_tilt_deg": 5.062732823588122
+    },
+    {
+      "behavior": "idle",
+      "source": "walk1_subject2",
+      "start_frame": 470,
+      "stop_frame_exclusive": 531,
+      "source_fps": 30.000300003000028,
+      "source_anatomical_yaw_change_deg": -1.2049395501864342,
+      "source_smoothed_yaw_change_deg": -3.356496261376286,
+      "first_halfsecond_mean_yaw_rate_deg_s": -6.466002138743766,
+      "last_halfsecond_mean_yaw_rate_deg_s": 0.484943922060987,
+      "source_mean_root_speed_m_s": 0.02703517159820059,
+      "source_foot_speed_p95_m_s": 0.007363927421097012,
+      "source_mean_trunk_tilt_deg": 3.607243482617402
+    }
+  ]
+}

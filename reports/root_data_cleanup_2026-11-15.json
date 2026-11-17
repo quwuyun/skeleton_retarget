@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-15",
+  "change": "Removed root data directory and its three custom symlinks. All actual data remains in skeleton_retarget/data.",
+  "canonical_paths": {
+    "raw_lafan1": "data/raw/lafan1",
+    "shared_selection": "data/selections/lafan1_walks.json",
+    "skeleton31_outputs": "data/outputs/skeleton31",
+    "skeleton17_outputs": "data/outputs/skeleton17_collision"
+  },
+  "legacy_path_mapping": {
+    "data/lafan1": "data/raw/lafan1",
+    "data/human_skeleton/walks_120hz": "data/outputs/skeleton31",
+    "data/human_skeleton17_collision": "data/outputs/skeleton17_collision"
+  },
+  "historical_records": "Original JSON paths and hashes preserved. resolve_recorded_path maps references during validation and calibration reuse; skeleton31 batch also resolves historical source paths.",
+  "verification": {
+    "official_files_unchanged": 1938,
+    "preserved_by_group": {
+      "assets/": 123,
+      "skeleton_retarget/retargeting/ik_configs/": 35,
+      "data/raw/": 77,
+      "data/outputs/": 178,
+      "data/selections/": 1
+    },
+    "root_data_removed": true,
+    "unexpected_changes": [],
+    "pytest": {
+      "passed": 34,
+      "warnings": 1
+    },
+    "existing_motion_validation": {
+      "motion_count": 24,
+      "all_passed": true,
+      "detail": "/tmp/gmr_root_data_cleanup_20261115_5ze952th/validation.json"
+    },
+    "skeleton17_batch_resume": {
+      "passed": 12,
+      "reused": 12,
+      "generated": 0
+    },
+    "skeleton31_batch_with_legacy_source_path": {
+      "passed": true,
+      "motion": "walk3_subject3",
+      "frames": 340,
+      "fps": 120,
+      "arrays_exactly_equal_to_original": {
+        "fps": true,
+        "root_pos": true,
+        "root_rot": true,
+        "dof_pos": true,
+        "local_body_pos": true,
+        "link_body_list": true
+      }
+    }
+  },
+  "backup": {
+    "directory": "/tmp/gmr_root_data_cleanup_20261115_5ze952th",
+    "baseline": "/tmp/gmr_root_data_cleanup_20261115_5ze952th/baseline.json",
+    "removed_symlinks_archive": "/tmp/gmr_root_data_cleanup_20261115_5ze952th/root_data_links_before.tar"
+  }
+}

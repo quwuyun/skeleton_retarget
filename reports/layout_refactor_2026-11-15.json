@@ -1,0 +1,383 @@
+{
+  "date": "2026-11-15",
+  "scope": "Only skeleton_retarget; upstream tracked files and existing root data aliases are unchanged.",
+  "layout": {
+    "core": "retargeting/",
+    "ik_configs": "skeleton_retarget/retargeting/ik_configs/",
+    "entry_points": "scripts/",
+    "models": "assets/",
+    "data": "data/{raw,plans,outputs}/",
+    "documentation": "docs/"
+  },
+  "migrations_in_order": {
+    "skeleton_retarget/common": "skeleton_retarget/retargeting",
+    "skeleton_retarget/retargeting/ik.py": "skeleton_retarget/retargeting/motion_retarget.py",
+    "skeleton_retarget/configs": "skeleton_retarget/retargeting/ik_configs",
+    "skeleton_retarget/models": "skeleton_retarget/assets",
+    "skeleton_retarget/workflows/skeleton17/collision_ik.py": "skeleton_retarget/retargeting/collision_ik.py",
+    "skeleton_retarget/workflows/skeleton17/prepare_model.py": "skeleton_retarget/scripts/prepare_skeleton17.py",
+    "skeleton_retarget/workflows/skeleton17/retarget_bvh.py": "skeleton_retarget/scripts/bvh_to_skeleton17.py",
+    "skeleton_retarget/workflows/skeleton17/batch_walks_120hz.py": "skeleton_retarget/scripts/bvh_to_skeleton17_dataset.py",
+    "skeleton_retarget/workflows/skeleton17/validate_motion.py": "skeleton_retarget/scripts/validate_skeleton17.py",
+    "skeleton_retarget/workflows/skeleton17/README.md": "docs/skeleton17.md",
+    "skeleton_retarget/workflows/skeleton31/prepare_model.py": "skeleton_retarget/scripts/prepare_skeleton31.py",
+    "skeleton_retarget/workflows/skeleton31/retarget_bvh.py": "skeleton_retarget/scripts/bvh_to_skeleton31.py",
+    "skeleton_retarget/workflows/skeleton31/batch_walks_120hz.py": "skeleton_retarget/scripts/bvh_to_skeleton31_dataset.py",
+    "skeleton_retarget/workflows/skeleton31/validate_motion.py": "skeleton_retarget/scripts/validate_skeleton31.py",
+    "skeleton_retarget/workflows/skeleton31/README.md": "docs/skeleton31.md",
+    "skeleton_retarget/workflows/skeleton31/retarget_mimickit.py": "skeleton_retarget/scripts/mimickit_to_skeleton31.py",
+    "skeleton_retarget/tools/play_motion.py": "skeleton_retarget/scripts/vis_motion.py",
+    "skeleton_retarget/tools/preview_motion.py": "skeleton_retarget/scripts/preview_motion.py",
+    "skeleton_retarget/tools/select_walk_cycles.py": "skeleton_retarget/scripts/select_walk_cycles.py"
+  },
+  "cleanup": {
+    "deleted_file_count": 23,
+    "deleted_bytes_excluding_caches": 144460317,
+    "deleted_files": [
+      "skeleton_retarget/workflows/__init__.py",
+      "skeleton_retarget/workflows/skeleton31/__init__.py",
+      "skeleton_retarget/workflows/skeleton17/__init__.py",
+      "skeleton_retarget/tools/__init__.py",
+      "reports/reorganization/integration.json",
+      "reports/reorganization/verify_preservation.py",
+      "reports/reorganization/cleanup.json",
+      "reports/reorganization/README.md",
+      "reports/reorganization/baseline.json",
+      "reports/reorganization/preservation_summary.json",
+      "reports/model_compatibility_2026-11-12/audit_fk.py",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk2_subject4.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk3_subject5.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk1_subject1.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk3_subject4.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk3_subject2.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk4_subject1.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk2_subject1.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk1_subject5.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk3_subject1.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk2_subject3.log",
+      "data/outputs/skeleton17_collision/batch_reports/logs/walk1_subject2.log",
+      "data/raw/lafan1/lafan1.zip"
+    ],
+    "lafan1_archive_verified_identical_to_extracted_bvh_count": 77,
+    "caches_removed": true
+  },
+  "preservation": {
+    "official_files_verified_sha256": 1938,
+    "official_files_changed": [],
+    "custom_files_preserved_byte_for_byte": 427,
+    "preserved_by_group": {
+      "assets/": 123,
+      "data/plans/": 2,
+      "data/outputs/": 178,
+      "data/raw/": 77,
+      "skeleton_retarget/retargeting/ik_configs/": 35,
+      "reports/": 4
+    },
+    "unexpected_changes": [],
+    "profiles": {
+      "skeleton17_collision": {
+        "motion_count": 12,
+        "total_frames": 3256,
+        "fps": 120,
+        "all_existing_motion_validations_passed": true,
+        "motion_results": [
+          {
+            "motion": "walk1_subject1_120hz.npz",
+            "frames": 396,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk1_subject2_120hz.npz",
+            "frames": 120,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk1_subject5_120hz.npz",
+            "frames": 120,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject1_120hz.npz",
+            "frames": 256,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject3_120hz.npz",
+            "frames": 388,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject4_120hz.npz",
+            "frames": 388,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject1_120hz.npz",
+            "frames": 340,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject2_120hz.npz",
+            "frames": 284,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject3_120hz.npz",
+            "frames": 340,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject4_120hz.npz",
+            "frames": 244,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject5_120hz.npz",
+            "frames": 140,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk4_subject1_120hz.npz",
+            "frames": 240,
+            "fps": 120.0,
+            "passed": true
+          }
+        ]
+      },
+      "skeleton31": {
+        "motion_count": 12,
+        "total_frames": 3256,
+        "fps": 120,
+        "all_existing_motion_validations_passed": true,
+        "motion_results": [
+          {
+            "motion": "walk1_subject1_120hz.npz",
+            "frames": 396,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk1_subject2_120hz.npz",
+            "frames": 120,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk1_subject5_120hz.npz",
+            "frames": 120,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject1_120hz.npz",
+            "frames": 256,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject3_120hz.npz",
+            "frames": 388,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk2_subject4_120hz.npz",
+            "frames": 388,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject1_120hz.npz",
+            "frames": 340,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject2_120hz.npz",
+            "frames": 284,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject3_120hz.npz",
+            "frames": 340,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject4_120hz.npz",
+            "frames": 244,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk3_subject5_120hz.npz",
+            "frames": 140,
+            "fps": 120.0,
+            "passed": true
+          },
+          {
+            "motion": "walk4_subject1_120hz.npz",
+            "frames": 240,
+            "fps": 120.0,
+            "passed": true
+          }
+        ]
+      }
+    }
+  },
+  "verification": {
+    "pytest_before": {
+      "passed": 33,
+      "warnings": 1
+    },
+    "pytest_after": {
+      "passed": 33,
+      "warnings": 1
+    },
+    "pytest_command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest tests skeleton_retarget/tests -q -p no:cacheprovider",
+    "unified_and_legacy_supported_direct_help_commands": {
+      "count": 15,
+      "all_passed": true
+    },
+    "new_script_module_help": {
+      "count": 12,
+      "all_passed": true
+    },
+    "walk3_subject3_rerun_arrays": {
+      "skeleton17_collision": {
+        "fps": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_rot": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dof_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "local_body_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "link_body_list": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": null
+        }
+      },
+      "skeleton31": {
+        "fps": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "root_rot": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dof_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "local_body_pos": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "link_body_list": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": null
+        }
+      }
+    },
+    "single_clip_batch": {
+      "skeleton17": {
+        "passed": true,
+        "frames": 340,
+        "fps": 120,
+        "validation_passed": true
+      },
+      "skeleton31": {
+        "passed": true,
+        "frames": 340,
+        "fps": 120,
+        "validation_passed": true
+      }
+    },
+    "offscreen_previews": {
+      "skeleton17": true,
+      "skeleton31": true
+    }
+  },
+  "compatibility_links": {
+    "skeleton_retarget/models": {
+      "target": "assets",
+      "valid": true
+    },
+    "skeleton_retarget/configs": {
+      "target": "skeleton_retarget/retargeting/ik_configs",
+      "valid": true
+    },
+    "assets/lafan1_walks": {
+      "target": "skeleton31/walks",
+      "valid": true
+    },
+    "skeleton_retarget/retargeting/ik_configs/lafan1_walks": {
+      "target": "skeleton31/walks",
+      "valid": true
+    },
+    "data/lafan1": {
+      "target": "../data/raw/lafan1",
+      "valid": true
+    },
+    "data/human_skeleton17_collision": {
+      "target": "../data/outputs/skeleton17_collision",
+      "valid": true
+    },
+    "data/human_skeleton/walks_120hz": {
+      "target": "../../data/outputs/skeleton31",
+      "valid": true
+    },
+    "data/human_skeleton/walk_120hz_plan_part2.json": {
+      "target": "../../data/plans/lafan1/walk_120hz_plan_part2.json",
+      "valid": true
+    },
+    "data/human_skeleton/walk_120hz_plan_part1.json": {
+      "target": "../../data/plans/lafan1/walk_120hz_plan_part1.json",
+      "valid": true
+    }
+  },
+  "compatibility_notes": [
+    "All python -m skeleton_retarget commands retain their existing options and behavior.",
+    "Direct imports from common, tools and workflows moved to the documented retargeting and scripts modules.",
+    "Historical metadata, model manifests and calibration provenance were not rewritten; directory aliases resolve recorded model/config paths.",
+    "31-coordinate model meshes retain their existing external Geometry dependency; the 17-active-coordinate model keeps its copied Geometry.",
+    "Validation covers saved format and kinematics. Existing motion quality limitations are unchanged."
+  ],
+  "external_backup": {
+    "directory": "/tmp/gmr_layout_20261115_h_yrehq_",
+    "archive": "/tmp/gmr_layout_20261115_h_yrehq_/skeleton_retarget_before.tar.gz",
+    "bytes": 321006566,
+    "baseline": "/tmp/gmr_layout_20261115_h_yrehq_/baseline.json",
+    "detailed_verification": "/tmp/gmr_layout_20261115_h_yrehq_/saved_validation"
+  }
+}
